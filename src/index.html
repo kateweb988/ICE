@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>Лед</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<h2 style="text-align: center; margin: 40px auto; color: black">
+		Pages
+	</h2>
+	<ul class="mm" style="display: flex; max-width: 800px; margin: 0 auto 50px; flex-wrap: wrap;">
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="main.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Главная</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="schedule.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Расписание</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="schedule2.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Обстановка</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="order.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Заявки</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="note.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Уведомление</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="message.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Сообщение</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="panel.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Инфо
+				панель</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="chart.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Диаграмма</a>
+		</li>
+		<li style="width: 25%; margin: 40px auto 0;">
+			<a href="settings.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Настройки </a>
+		</li>
+	</ul>
+	<div class="d-flex"
+		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
+		<a href="#" class="btn btn_1 a1" style="margin: 20px;">
+			Добавить заявку
+		</a>
+	</div>
+	<div class="popup__bg" id="popup">
+		<div class="popup pop">
+			<img src="img/close.svg" alt="" class="close-popup">
+			<div class="popup__wrap">
+				<h2 class="popup__title">
+					отправить заявку
+				</h2>
+				<form action="#" class="form js-form" id="popupResult" method="post">
+					<div class="form__left">
+						<div class="form__item">
+							<input type="text" placeholder="Новый порт" name="name" class="form__field" required="">
+							<label>
+								Координаты старта маршрута
+							</label>
+						</div>
+						<div class="form__item">
+							<input type="text" placeholder="устье Лены" name="name" class="form__field" required="">
+							<label>
+								Координаты конца маршрута
+							</label>
+						</div>
+						<div class="form__item form__item_1">
+							<select class="select">
+								<option value="1">Arc 7</option>
+								<option value="2">Arc 5</option>
+								<option value="3">Arc 3</option>
+								<option value="4">Arc 7</option>
+							</select>
+							<label>
+								Класс судна
+							</label>
+						</div>
+						<div class="form__item form__item_2">
+							<select class="select">
+								<option value="1">12:00</option>
+								<option value="2">13:00</option>
+								<option value="3">14:00</option>
+								<option value="4">12:00</option>
+							</select>
+							<label>
+								Желаемое время отправления
+							</label>
+						</div>
+					</div>
+					<div class="form__right">
+						<div class="form__flex q">
+							<div class="form__item ">
+								<input class="form-check-input custom-checkbox" checked name="check5" type="radio" value="yes "
+									id="check8">
+								<label class="form-check-label " for="check8">
+									<p>
+										Индивидуальный
+									</p>
+									<label class="label">
+										Тип сопровождение
+									</label>
+								</label>
+							</div>
+							<div class="form__item">
+								<input class="form-check-input custom-checkbox" required="" name="check5" type="radio"
+									value="yes " id="check9">
+								<label class="form-check-label " for="check9">
+									<p>
+										Караванное
+									</p>
+									<label class="label">
+										Тип сопровождение
+									</label>
+								</label>
+							</div>
+						</div>
+						<div class="form__item">
+							<input type="text" placeholder="BORIS VILKITSKY" name="name" class="form__field" required="">
+							<label>
+								Наименование судна
+							</label>
+						</div>
+						<div class="form__item form__item_1">
+							<select class="select">
+								<option value="1">Arc 15</option>
+								<option value="2">Arc 1</option>
+								<option value="3">Arc 12</option>
+								<option value="4">Arc 15</option>
+							</select>
+							<label>
+								Скорость, узлы
+								(по чистой воде)
+							</label>
+						</div>
+						<div class="form__item form__item_2">
+							<select class="select">
+								<option value="1">15:00</option>
+								<option value="2">16:00</option>
+								<option value="3">17:00</option>
+								<option value="4">15:00</option>
+							</select>
+							<label>
+								Желаемое время прибытия
+							</label>
+						</div>
+					</div>
+					<div class="form__links q">
+						<a href="#" class="btn form__reg">
+							Редактировать заявку
+						</a>
+						<a href="#" class="btn form__btn">
+							Сохранить заявку
+						</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+
+	<script src="js/all.js"></script>
+</body>
+
+</html>

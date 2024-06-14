@@ -1,0 +1,1080 @@
+.close-popup
+   position: absolute
+   top: 50px
+   right: 50px
+   cursor: pointer
+   width: 55px
+   transition: 0.5s 
+   height: 55px
+   z-index: 20
+   &:hover 
+      transform: rotate(90deg)
+input::-webkit-input-placeholder 
+   color: black !important
+input::-moz-blacklder
+   color: black !important
+input:-ms-input-placeholder 
+   color: black !important
+input:-moz-placeholder 
+   color: black !important
+.menu-btn, .menu
+   display: none
+.popup__bg, .popup__bg2
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100vh
+   background: rgba(0, 0, 0, 0.7)
+   opacity: 0
+   pointer-events: none
+   transition: 0.5s all
+   overflow-y: auto
+   overflow-x: hidden
+.popup__bg.active, .popup__bg2.active
+    opacity: 1
+    pointer-events: all
+    transition: 0.5s all
+    z-index: 22
+.popup
+   position: absolute
+   top: 47%
+   left: 50%
+   transform: translate(-50%, -50%) scale(0)
+   width: 96%
+   height: max-content
+   transition: 0.5s all
+   text-align: center
+   background: white
+   padding: 59px 44px 47px
+   &__title 
+      text-align: left
+.popup.active, .popup2.active
+   transform: translate(-50%, -46%) scale(1)
+   transition: 0.5s all
+.custom-checkbox 
+   position: absolute
+   z-index: -1
+   opacity: 0
+.custom-checkbox+label 
+   display: flex
+   align-items: center
+   user-select: none
+   font-weight: 400
+   font-size: 16px
+   line-height: 130%
+   color: #494949
+   cursor: pointer
+   &:hover
+      &:before 
+         border: 1px solid $blue
+.custom-checkbox+label::before
+   content: ''
+   display: inline-block
+   flex-shrink: 0
+   display: flex
+   flex-grow: 0
+   background-repeat: no-repeat
+   background-position: center center
+   background-size: 8px
+   background: #FFFFFF
+   flex: 1 0 auto
+   transition: 0.2s
+   width: 20px
+   height: 20px
+   border-radius: 5px
+   border: 1px solid #e9e9e9
+   background-color: #ffffff
+   max-width: 20px
+   margin-right: 11px
+.custom-checkbox:checked+label::before 
+   background: url(/img/check2.png) no-repeat center center
+   background-size: 8px
+.tabs__pane 
+   display: none
+.tabs__pane_show 
+   display: block
+.tabs__btn_active
+   color: #20252d !important
+   position: relative
+.swiper-button-next, .swiper-button-prev
+   z-index: 9
+.swiper-button-disabled
+   opacity: 0
+   pointer-events: none
+.mob 
+   display: none
+/* SELECT */
+.selectCF
+   margin: 0
+   padding: 0
+   display: inline-block
+   position: relative
+   color: black
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   width: max-content
+   height: auto
+   background: transparent
+.selectCF li
+   list-style: none
+   cursor: pointer
+   perspective: 900px
+   -webkit-perspective: 900px
+   text-align: left
+   width: 100%
+   height: 100%
+   max-height: 100%
+   box-sizing: border-box
+.selectCF > li
+   position: relative
+   border: none
+.selectCF span
+   display: flex
+   height: auto
+   line-height: 100%
+   color: #888888
+   z-index: 1
+   align-items: center
+.selectCF .arrowCF
+   transition: .3s
+   -webkit-transition: .3s
+   width: 7px
+   height: 5px
+   text-align: center
+   vertical-align: top
+   background: url(/img/down-arrow.png) no-repeat !important
+   position: absolute
+   right: -16px
+   top: 8px
+.selectCF .titleCF
+   font-size: 16px
+   font-weight: 400
+   text-overflow: ellipsis
+   color: #000000 !important
+   white-space: nowrap
+   width: max-content !important
+   height: max-content !important
+   box-sizing: border-box
+   background: transparent !important
+.selectCF .searchCF
+   position: absolute
+   top: 3px
+   right: 0
+   z-index: -1
+@keyframes searchActive 
+   from
+      transform: rotateY(180deg) 
+   to
+      transform: rotateY(0deg)
+@-moz-keyframes searchActive 
+   from
+      transform: rotateY(180deg) 
+   to
+      transform: rotateY(0deg)
+@-webkit-keyframes searchActive 
+   from
+      -webkit-transform: rotateY(180deg) 
+   to
+      -webkit-transform: rotateY(0deg)
+.searchActive .searchCF
+   z-index: 1
+   animation: searchActive 0.3s alternate 1
+   -moz-animation: searchActive 0.3s alternate 1
+   -webkit-animation: searchActive 0.3s alternate 1
+.searchActive .titleCF
+   opacity: 0
+.selectCF .searchCF input
+   border: none !important
+   padding: 0
+   margin: 0
+   width: auto
+   height: auto
+   background: transparent
+.selectCF .searchCF input:active, .selectCF .searchCF input:focus
+   box-shadow: none !important
+   border: none !important
+   outline: none !important
+.selectCF li ul
+   display: none
+   position: absolute
+   top: 100%
+   left: 1px
+   width: 100%
+   background: grey
+   max-height: 255px
+   overflow-y: auto
+   transition: .2s
+   -webkit-transition: .2s
+   z-index: 2
+   box-sizing: border-box
+   padding-bottom: 10px
+   border-top: none
+.selectCF li ul li
+   padding: 9px 0 9px 10px
+   transition: .2s
+   -webkit-transition: .2s
+   overflow: hidden
+   text-overflow: ellipsis
+   white-space: nowrap
+   border-top: none
+   box-sizing: border-box
+   height: 40px
+   font-weight: 500
+   font-size: 16px
+   line-height: 22px
+   color: #FAFAFF
+   &:last-child
+      border-radius: 0px 0px 5px 5px
+      padding-bottom: 10px
+   &:hover 
+      color: $blue
+.onCF .arrowCF
+   transform: rotate(180deg)
+   -webkit-transform: rotate(180deg)
+@-moz-keyframes effect1 
+   from
+      transform: translateY(15px)
+      opacity: 0
+   to
+      transform: translateY(0px)
+      opacity: s1
+@-webkit-keyframes effect1 
+   from
+      -webkit-transform: translateY(15px) 
+      opacity: 0
+   to
+      -webkit-transform: translateY(0px)
+      opacity: 1
+.onCF li ul
+   display: block
+   position: absolute
+   -moz-animation: effect1 0.3s alternate 1
+   -webkit-animation: effect1 0.3s alternate 1
+   left: -6.55px
+   top: 22px
+   border-radius: 0 0 4px 4px
+   width: 100%
+   min-width: max-content
+   padding-right: 10px
+ul.info li, #event-change
+   color: #FFF
+ul.info
+   padding: 0
+   display: none
+ul.info li
+   display: inline-block
+   border-radius: 5px
+   padding: 0 5px
+.accordeon, .accordeon2
+   padding: 5px 0 30px
+   border-bottom: 1px solid #ececec
+   margin-bottom: 26px
+   width: 100%
+.accordeon__item 
+   width: 100%
+   list-style-type: none
+.accordeon__item:first-child .accordeon__button
+   margin-top: 0
+.accordeon__button, .accordeon__button2
+   width: 100%
+   text-align: left
+   border: none
+   cursor: pointer
+   position: relative
+   transition: all 0.5s ease
+   font-size: 17px
+   font-weight: 700
+   color: #282828
+   display: flex
+   justify-content: space-between
+.accordeon__button:hover, .accordeon__button2:hover
+   color: $blue
+.accordeon__button:after, .accordeon__button2:after
+   content: ""
+   position: absolute
+   right: 0px
+   background: url(/img/down-arrow.png) no-repeat !important
+   width: 7px
+   left: inherit
+   height: 5px
+   top: 8px
+   bottom: inherit
+   margin-bottom: -20px
+   transition: all 0.5s ease
+.accordeon__button.active:after, .accordeon__button2.active:after
+   content: ""
+   position: absolute
+   right: 0px
+   background: url(/img/down-arrow.png) no-repeat !important
+   width: 7px
+   left: inherit
+   height: 5px
+   bottom: 30%
+   margin-bottom: -20px
+   transition: all 0.5s ease
+   transform: rotate(180deg)
+   -webkit-transform: rotate(180deg)
+.accordeon__panel, .accordeon__panel2
+   max-height: 0
+   overflow: hidden
+   margin-left: 0
+   transition: all 0.5s ease
+.panel__text, .panel__text2
+   list-style-type: none
+   padding-top: 0px
+   max-width: 688px
+   margin-top: 30px
+   margin-bottom: 20px
+.panel__info
+   font-weight: 300
+   font-size: 16px
+   line-height: 140%
+   margin-bottom: 20px
+   &:last-child
+      margin-bottom: 0
+.nav 
+   margin: 30px 0 50px
+   &__area 
+      align-items: center
+   &__logo 
+      margin-right: 37px
+      display: block
+      img 
+         width: 100% 
+         height: 100%
+         object-fit: contain
+   &__box 
+      border-radius: 10px
+      background: rgb(33, 33, 33)
+      padding: 0 20px 0 31px 
+      align-items: center
+      justify-content: space-between
+   &__list 
+      flex-wrap: wrap
+      li 
+         display: flex
+         align-items: center
+         justify-content: center
+         height: 101px
+         margin-right: 3px
+         width: max-content
+         padding: 0 16px
+         a 
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 100%
+            color: rgb(255, 255, 255)
+            font-size: 20px
+            font-weight: 400
+            line-height: 24px
+         &:last-child
+            margin-right: 0
+         &.active 
+            background: $blue
+            a 
+               font-weight: 500
+               color: white !important
+         &:hover 
+            a 
+               color: $blue
+   &__content 
+      align-items: center
+   &__info 
+      align-items: center
+   &__item 
+      margin-right: 20px
+      position: relative
+      a 
+         display: flex
+         align-items: center
+         justify-content: center
+         border-radius: 50% 
+         width: 69px
+         height: 69px
+         background: rgb(255, 255, 255)
+      p 
+         position: absolute
+         top: -11px
+         right: -9px
+         display: flex
+         align-items: center
+         justify-content: center
+         border-radius: 50% 
+         width: 35px
+         height: 35px
+         background: $blue
+         color: rgb(255, 255, 255)
+         font-size: 16px
+         font-weight: 500
+         transition: 0.5s
+         line-height: 20px
+      &:first-child
+         a 
+            padding-left: 3.5px
+      &:hover 
+         a
+            background: $blue
+            .svg 
+               path 
+                  fill: white
+         p 
+            background: white 
+            color: $blue
+   &__settings 
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50% 
+      margin-left: 20px
+      width: 69px
+      height: 69px
+      border-radius: 10px
+      background: rgba(255, 255, 255, 0.15)
+      &:hover 
+         background: $blue 
+         .svg 
+            path 
+               fill: white
+   &__btn 
+      margin-left: 20px
+.main 
+   margin-bottom: 50px
+   &__box 
+      overflow: hidden
+      display: flex
+      align-items: flex-start
+      position: relative
+      border-radius: 10px
+      height: 754px
+      padding: 40px
+      iframe 
+         width: 100%
+         height: 100%
+         position: absolute
+         top: 0
+         left: 0
+         z-index: 0
+   &__info 
+      position: relative
+      z-index: 2
+      border-radius: 10px
+      backdrop-filter: blur(4px)
+      background: rgba(255, 255, 255, 0.8)
+      width: 387px
+      padding: 30px
+   &__top 
+      margin-bottom: 26px
+      align-items: center
+   &__num
+      color: rgb(0, 0, 0)
+      font-size: 46px
+      font-weight: 600
+      line-height: 48px
+      margin-right: 30px
+   &__area 
+      margin-left: 30px
+   &__text 
+      color: rgb(0, 0, 0)
+      font-size: 13px
+      font-weight: 600
+      line-height: 20px
+   &__content 
+      color: rgb(0, 0, 0)
+      font-size: 14px
+      font-weight: 600
+      line-height: 20px
+      span
+         margin-left: 5px
+   &__el 
+      align-items: center
+      margin-right: 25px
+      p 
+         color: rgb(0, 0, 0)
+         font-size: 14px
+         font-weight: 400
+         margin-left: 6px
+         line-height: 24px
+         span 
+            margin-left: 5px
+      &:last-child
+         margin-right: 0
+   &__wrap 
+      position: relative
+      z-index: 2
+      margin-left: auto
+      margin-top: 15px
+      border-radius: 10px
+      backdrop-filter: blur(4px)
+      background: rgba(255, 255, 255, 0.8)
+      width: 458px
+      padding: 30px 0 30px 30px
+   &__title 
+      color: rgb(0, 0, 0)
+      font-size: 25px
+      font-weight: 600
+      line-height: 30px
+      margin-bottom: 30px
+ 
+   &__one 
+      align-items: center
+      margin-right: 20px
+      p 
+         color: rgb(98, 111, 126)
+         font-size: 16px
+         font-weight: 500
+         line-height: 20px
+         margin-left: 12px
+      &:last-child
+         margin-right: 0
+   &__flex 
+      margin-bottom: 36px
+   &-way 
+      padding-right: 30px
+      &__item 
+         align-items: flex-start
+         padding-left: 21px
+         border-left: 2px solid rgb(227, 227, 227)
+         padding-bottom: 27px
+         position: relative
+         &:last-child
+            padding-bottom: 0
+            border-left: none
+            &::before
+               left: -3.8px
+         &:before 
+            content: ""
+            display: block
+            width: 12px
+            height: 12px
+            box-sizing: border-box
+            border: 2px solid $blue
+            background: rgb(255, 255, 255)
+            position: absolute
+            left: -6.8px
+            top: 0
+            border-radius: 50%
+         &.active 
+            border-left: 2px solid $blue
+            &::before
+               background: $blue
+         &.done
+            &:after 
+               content: ""
+               position: absolute
+               right: 0
+               top: -3px
+               width: 31px
+               height: 31px
+               display: block
+               background: url(/img/c3.svg) no-repeat center center
+      &__content 
+         position: relative
+         top: -10px
+      &__name 
+         color: rgb(0, 0, 0)
+         font-size: 20px
+         font-weight: 600
+         line-height: 24px
+         margin-bottom: 2px
+      &__text 
+         color: rgb(98, 111, 126)
+         font-size: 16px
+         font-weight: 400
+         line-height: 20px
+         span 
+            margin-left: 5px
+      &__progress 
+         margin-left: 20px
+         color: $blue
+         font-size: 16px
+         line-height: 20px
+   &__btn 
+      width: 400px
+      height: 57px
+      border-radius: 10px
+      justify-content: space-between
+      padding: 0 20px
+      margin-top: 20px
+      &:hover 
+         .svg 
+            path 
+               fill: $blue
+.tabs__btn
+   border-radius: 50px
+   background: rgba(104, 177, 247, 0.1)
+   height: 42px
+   display: flex
+   align-items: center
+   justify-content: center
+   margin-right: 10px
+   color: rgb(98, 111, 126)
+   font-size: 18px
+   font-weight: 600
+   line-height: 22px
+   width: max-content
+   padding: 0 20px
+   white-space: nowrap 
+   transition: 0.5s 
+   cursor: pointer
+   margin-bottom: 26px
+   border: 1px solid transparent
+   &_active 
+      background: $blue
+      color: white !important
+   &:hover 
+      border: 1px solid $blue
+.tabs__nav
+   overflow-x: auto
+.info 
+   margin-bottom: 50px
+   .tabs__btn
+      margin-bottom: 50px
+   .info__row_bg
+      p 
+         font-weight: 600 !important
+   &__row 
+      align-items: center
+      width: 100%
+      overflow: hidden
+      padding: 28px 50px
+      margin-bottom: 30px
+      border-radius: 10px
+      background: rgba(0, 119, 255, 0.05)
+      transition: 0.5s 
+      &:hover 
+         background: $blue
+         p 
+            color: white
+      &:last-child
+         margin-bottom: 0
+      &:first-child
+         background: transparent
+         padding-top: 0
+         padding-bottom: 0
+         p 
+            color: rgb(0, 0, 0)
+            font-size: 20px
+            font-weight: 600
+            line-height: 24px
+      p 
+         color: rgb(0, 0, 0)
+         font-size: 20px
+         transition: 0.5s 
+         font-weight: 400
+         line-height: 24px
+         &:first-child
+            min-width: 17.5%
+         &:nth-child(2)
+            min-width: 17.5%
+         &:nth-child(3)
+            min-width: 17.5%
+         &:nth-child(4)
+            min-width: 17.5%
+         &:nth-child(5)
+            min-width: 17.5%
+   .accordeon__button:after
+      background: url(/img/pl1.svg) no-repeat !important
+      right: 31px
+      width: 67px
+      height: 67px
+      top: 13px
+   .accordeon__button.active
+      background: $blue
+      p 
+         color: white
+      &:after
+         background: url(/img/pl2.svg) no-repeat !important
+.form 
+   width: 100%
+   text-align: left
+   display: flex
+   justify-content: space-between
+   flex-wrap: wrap
+   &__left 
+      width: 49%
+   &__right
+      width: 49%
+   &__item 
+      width: 100%
+      height: 111px
+      position: relative
+      margin-bottom: 30px
+      &_2
+         z-index: 3         
+      input 
+         width: 100%
+         height: 100%
+         box-sizing: border-box
+         border: 2px solid $blue
+         border-radius: 10px
+         padding-left: 30px
+         padding-bottom: 35px
+         color: rgb(0, 0, 0)
+         font-size: 24px
+         font-weight: 500
+         line-height: 140%
+         &:focus 
+            border: 2px solid black
+      textarea 
+         width: 100%
+         height: 100%
+         max-width: 100%
+         padding-left: 35px
+         color: rgb(0, 0, 0)
+         font-size: 24px
+         font-weight: 400
+         padding-top: 17px
+         line-height: 140%
+         border: 2px solid rgb(227, 227, 227)
+         border-radius: 50px
+         &:focus 
+            border: 2px solid $blue
+      label
+         color: #adb4bd
+         font-size: 18px
+         font-weight: 400
+         line-height: 120%
+         position: absolute
+         bottom: 26px
+         left: 33px
+      .selectCF
+         width: 100%
+         height: 100%
+         box-sizing: border-box
+         border: 2px solid $blue
+         border-radius: 10px
+      .selectCF .titleCF
+         padding-left: 30px
+         color: rgb(0, 0, 0) !important
+         font-size: 24px
+         font-weight: 500
+         padding-top: 18px
+         line-height: 140%
+      .selectCF .arrowCF
+         background: url(/img/ar.svg) no-repeat !important
+         width: 59px
+         height: 58px
+         right: 21px
+         top: 26px
+      .onCF li ul 
+         left: 0
+         padding: 10px 0
+         top: -305px
+         max-height: 300px
+         border-radius: 10px
+         background: #e6f1ff
+         li 
+            height: 69px
+            padding: 20px
+            color: rgb(98, 111, 126)
+            font-size: 20px
+            font-weight: 500
+            transition: 0.5s 
+            line-height: 24px
+            &:hover 
+               background: rgba(0, 119, 255, 0.1)
+      .form-check-label 
+         width: 100%
+         height: 100%   
+         box-sizing: border-box
+         border: 2px solid rgb(86, 89, 95)
+         border-radius: 10px
+         top: 0
+         padding-bottom: 30px
+         left: 0
+         p 
+            color: rgb(98, 102, 105)
+            font-size: 24px
+            font-weight: 500
+            line-height: 140%
+            margin-left: 32px
+      .custom-checkbox + label::before
+         position: absolute
+         margin-right: 0
+         top: 40px
+         right: 30px
+         width: 31px
+         height: 31px
+         max-width: 31px
+         background: url(/img/t1.svg) no-repeat center center
+         border: none
+      .custom-checkbox:checked + label::before
+         background: url(/img/t2.svg) no-repeat center center
+      .custom-checkbox:checked + .form-check-label 
+         border: 2px solid $blue
+         p 
+            color: #000
+   button 
+      width: 100%
+      height: 111px
+      font-size: 20px
+      font-weight: 700
+      text-transform: uppercase
+   &__flex 
+      justify-content: space-between
+      .form__item 
+         width: 48.7%
+   &__reg 
+      width: 284px
+      height: 69px
+      border-radius: 10px
+      background: rgba(0, 119, 255, 0.1)
+      margin-right: 30px
+      color: $blue
+      font-size: 20px
+      font-weight: 500
+      line-height: 24px
+      border: 2px solid rgba(0, 119, 255, 0.1)
+   &__btn 
+      width: 284px
+      height: 69px
+.accordeon__item
+   margin-bottom: 30px
+   border-radius: 10px
+   .info__row:first-child
+      padding: 28px 50px
+      background: rgba(0, 119, 255, 0.05)
+   .info__row
+      p 
+         font-weight: 400
+         &:first-child
+            min-width: 13%
+   .info__row p:nth-child(2)
+      min-width: 13%
+.info__row_bg
+   p:first-child, p:nth-child(2)
+      min-width: 13%
+.style1
+   margin-bottom: 60px
+   position: relative
+   z-index: 3
+   .selectCF
+      width: 331px
+      height: 69px
+      box-sizing: border-box
+      border: 2px solid $blue
+      border-radius: 10px
+      li 
+         padding: 20px 20px 0
+   .selectCF .titleCF
+      color: $blue !important
+      font-size: 20px
+      font-weight: 500
+      line-height: 24px
+   .selectCF .arrowCF
+      background: url(/img/arr.svg) no-repeat !important
+      width: 23px
+      height: 16px
+      right: 16px
+      top: 26px
+   .onCF .arrowCF
+      top: 22px
+   .onCF li ul
+      left: 0
+      padding: 10px 0
+      top: 75px
+      max-height: 300px
+      border-radius: 10px
+      background: #e6f1ff
+      li 
+         height: 69px
+         padding: 20px
+         color: rgb(98, 111, 126)
+         font-size: 20px
+         font-weight: 500
+         transition: 0.5s 
+         line-height: 24px
+         &:hover 
+            background: rgba(0, 119, 255, 0.1)
+#order
+   .accordeon__button
+      &.active
+         background: transparent
+         .info__row
+            background: $blue
+      &:hover 
+         .info__row
+            background: $blue
+         p 
+            color: white
+.selectCF .searchCF input
+   display: none !important
+.panel__text
+   max-width: 100%
+.note 
+   &__item 
+      width: 100%
+      height: 130px
+      border-radius: 10px
+      background: #f2f8ff
+      overflow: hidden
+      margin-bottom: 30px
+      padding: 40px 50px
+      align-items: center
+   &__name 
+      color: rgb(0, 0, 0)
+      font-size: 20px
+      font-weight: 600
+      line-height: 24px
+      margin-bottom: 5px
+   &__time 
+      color: $blue
+      font-size: 16px
+      font-weight: 400
+      line-height: 20px
+      span 
+         margin-left: 5px
+   &__text 
+      color: rgb(98, 111, 126)
+      font-size: 16px
+      font-weight: 400
+      line-height: 20px
+      width: 100%
+      max-width: 52.4%
+   &__content 
+      min-width: 165px 
+      margin-right: 200px
+   &__close 
+      background: $blue
+      width: 55px
+      height: 55px
+      margin-left: auto
+      border-radius: 50%
+      display: flex
+      border: 1px solid $blue
+      align-items: center
+      justify-content: center
+      &:hover 
+         background: white 
+         .svg 
+            path
+               stroke: $blue
+   &__flex 
+      .style1
+         &:first-child
+            margin-right: 30px
+.panel 
+   .main-way__item
+      width: 100%
+      max-width: 380px
+   h2 
+      margin-top: 80px
+.chart
+   &__area 
+      width: 100% 
+   &__row 
+      justify-content: space-between
+      align-items: center
+      position: relative
+      &:first-child
+         .chart__block 
+            background: $blue
+            border: 1px solid white
+            &:first-child
+               border-radius: 10px 0px 0px 0px
+            &:last-child
+               border-radius: 0px 10px 0px 0px
+      &:nth-child(2)
+         .chart__block
+            border-top: none
+         .chart__progress 
+            left: 12.5%
+            width: 227px
+      &:nth-child(3)
+         .chart__progress 
+            left: 25.5%
+            width: 287px
+      &:nth-child(5)
+         .chart__progress 
+            left: 42.5%
+            width: 463px
+      &:nth-child(7)
+         .chart__progress 
+            left: 69.5%
+            width: 287px
+      &:last-child
+         .chart__block 
+            &:first-child
+               border-radius: 0px 0px 0px 10px
+            &:last-child
+               border-radius: 0px 0px 10px 0px
+   &__progress
+      content: ""
+      display: block
+      position: absolute
+      top: 30px
+      background: $blue
+      border-radius: 10px
+      height: 47px
+   &__block 
+      display: flex
+      align-items: center
+      justify-content: center
+      color: rgb(255, 255, 255)
+      font-size: 20px
+      font-weight: 600
+      line-height: 24px
+      overflow: hidden
+      height: 107px
+      width: 20%
+      border: 1px solid rgb(151, 178, 207)
+      border-top: none
+      border-left: none
+      &:first-child
+         border-left: 1px solid rgb(151, 178, 207)
+   &__text 
+      min-width: 200px
+      color: rgb(0, 0, 0)
+      font-size: 20px
+      font-weight: 600
+      line-height: 24px
+.set 
+   form 
+      margin-bottom: 80px
+   h2
+      color: rgb(0, 0, 0)
+      font-size: 25px
+      font-weight: 600
+      line-height: 30px
+      text-transform: uppercase
+   &__item 
+      width: 100%
+      margin-bottom: 30px
+      height: 111px
+      border-radius: 10px
+      background: rgba(0, 119, 255, 0.1)
+      align-items: center
+      justify-content: space-between
+      padding: 0 50px
+      p 
+         color: rgb(0, 0, 0)
+         font-size: 20px
+         font-weight: 600
+         transition: 0.5s
+         line-height: 24px
+         text-transform: uppercase
+         span 
+            margin-right: 25px
+      &:hover 
+         background: $blue
+         p 
+            color: white
+         .set__btn 
+            background: white 
+            .svg
+               path 
+                  stroke: $blue
+   &__btn 
+      align-items: center
+      justify-content: center
+      width: 54.68px
+      height: 55px
+      display: flex
+      border-radius: 50%
+      background: $blue
+      transition: 0.5s

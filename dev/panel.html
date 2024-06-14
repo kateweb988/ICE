@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>Лед</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap">
+		<header class="header" id="header">
+			<nav class="nav">
+				<div class="container">
+					<div class="nav__box q">
+						<div class="nav__area q">
+							<div class="menu-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="menu">
+								<ul>
+									<li>
+										<a href="#">
+											Карта
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Расписание
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Информация
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Ледовая обстановка
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Заявки
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Диаграмма Ганта
+										</a>
+									</li>
+								</ul>
+							</div>
+							<a href="main.html" class="nav__logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+							<ul class="nav__list q">
+								<li class="active">
+									<a href="#">
+										Карта
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Расписание
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Информация
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Ледовая обстановка
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Заявки
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Диаграмма Ганта
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav__content q">
+							<div class="nav__info q">
+								<div class="nav__item">
+									<a href="#">
+										<img src="img/a1.svg" alt="" class="svg">
+									</a>
+									<p>
+										8
+									</p>
+								</div>
+								<div class="nav__item">
+									<a href="#">
+										<img src="img/a2.svg" alt="" class="svg">
+									</a>
+									<p>
+										22
+									</p>
+								</div>
+							</div>
+							<a href="#" class="nav__btn btn">
+								Добавить заявку
+							</a>
+							<a href="#" class="nav__settings q">
+								<img src="img/a3.svg" alt="" class="svg">
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</nav>
+		</header>
+		<section class="info panel" id="panel">
+			<div class="container">
+				<h1>
+					Ледовая обстановка
+				</h1>
+				<div class="tabs">
+					<div class="tabs__nav d-flex">
+						<a href="#" class="tabs__btn tabs__btn_active active">
+							ДЮК II
+						</a>
+						<a href="#" class="tabs__btn">
+							САРМАТ
+						</a>
+						<a href="#" class="tabs__btn">
+							ТАМБЕЙ
+						</a>
+						<a href="#" class="tabs__btn">
+							АЙС ИГЛ
+						</a>
+					</div>
+					<div class="tabs__content">
+						<div class="tabs__pane tabs__pane_show">
+							<div class="main__flex q">
+								<div class="main__one q">
+									<img src="img/c1.svg" alt="">
+									<p>
+										3 500 km
+									</p>
+								</div>
+								<div class="main__one q">
+									<img src="img/c2.svg" alt="">
+									<p>
+										5 дней
+									</p>
+								</div>
+							</div>
+							<div class="main-way">
+								<div class="main-way__item active done q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Новый порт
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												1 марта 2024 <span> 9:43</span>
+											</p>
+											<p class="main-way__progress">
+												Завершён
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Пролив Лонга
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												2 марта 2024 <span> 12:50</span>
+											</p>
+											<p class="main-way__progress">
+												В пути
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Терминал Утренний
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												3 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item  q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Дудинка
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												4 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Рейд Мурманска
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												5 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="tabs__pane">
+							<div class="main__flex q">
+								<div class="main__one q">
+									<img src="img/c1.svg" alt="">
+									<p>
+										3 000 km
+									</p>
+								</div>
+								<div class="main__one q">
+									<img src="img/c2.svg" alt="">
+									<p>
+										7 дней
+									</p>
+								</div>
+							</div>
+							<div class="main-way">
+								<div class="main-way__item active done q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Новый порт
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												1 марта 2024 <span> 9:43</span>
+											</p>
+											<p class="main-way__progress">
+												Завершён
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Пролив Лонга
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												2 марта 2024 <span> 12:50</span>
+											</p>
+											<p class="main-way__progress">
+												В пути
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Терминал Утренний
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												3 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item  q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Дудинка
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												4 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Рейд Мурманска
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												5 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__pane">
+							<div class="main__flex q">
+								<div class="main__one q">
+									<img src="img/c1.svg" alt="">
+									<p>
+										3 500 km
+									</p>
+								</div>
+								<div class="main__one q">
+									<img src="img/c2.svg" alt="">
+									<p>
+										5 дней
+									</p>
+								</div>
+							</div>
+							<div class="main-way">
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Новый порт
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												1 марта 2024 <span> 9:43</span>
+											</p>
+											<p class="main-way__progress">
+												Завершён
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Пролив Лонга
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												2 марта 2024 <span> 12:50</span>
+											</p>
+											<p class="main-way__progress">
+												В пути
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Терминал Утренний
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												3 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item  q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Дудинка
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												4 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Рейд Мурманска
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												5 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="tabs__pane">
+							<div class="main__flex q">
+								<div class="main__one q">
+									<img src="img/c1.svg" alt="">
+									<p>
+										3 500 km
+									</p>
+								</div>
+								<div class="main__one q">
+									<img src="img/c2.svg" alt="">
+									<p>
+										5 дней
+									</p>
+								</div>
+							</div>
+							<div class="main-way">
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Новый порт
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												1 марта 2024 <span> 9:43</span>
+											</p>
+											<p class="main-way__progress">
+												Завершён
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Пролив Лонга
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												2 марта 2024 <span> 12:50</span>
+											</p>
+											<p class="main-way__progress">
+												В пути
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Терминал Утренний
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												3 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item  q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Дудинка
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												4 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Рейд Мурманска
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												5 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="tabs__pane">
+							<div class="main__flex q">
+								<div class="main__one q">
+									<img src="img/c1.svg" alt="">
+									<p>
+										3 500 km
+									</p>
+								</div>
+								<div class="main__one q">
+									<img src="img/c2.svg" alt="">
+									<p>
+										5 дней
+									</p>
+								</div>
+							</div>
+							<div class="main-way">
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Новый порт
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												1 марта 2024 <span> 9:43</span>
+											</p>
+											<p class="main-way__progress">
+												Завершён
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item active q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Пролив Лонга
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												2 марта 2024 <span> 12:50</span>
+											</p>
+											<p class="main-way__progress">
+												В пути
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Терминал Утренний
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												3 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item  q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Дудинка
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												4 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="main-way__item q">
+									<div class="main-way__content">
+										<p class="main-way__name">
+											Рейд Мурманска
+										</p>
+										<div class="main-way__info q">
+											<p class="main-way__text">
+												5 марта 2024
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<h2>
+					данные
+				</h2>
+				<form action="#" class="form js-form" id="popupResult" method="post">
+					<div class="form__left">
+						<div class="form__item">
+							<input type="text" value="Новый порт" name="name" class="form__field" required="">
+							<label>
+								Координаты старта маршрута
+							</label>
+						</div>
+						<div class="form__item">
+							<input type="text" value="устье Лены" name="name" class="form__field" required="">
+							<label>
+								Координаты конца маршрута
+							</label>
+						</div>
+						<div class="form__item">
+							<input type="text" value="Arc 5" name="name" class="form__field" required="">
+							<label>
+								Класс судна
+							</label>
+						</div>
+						<div class="form__item">
+							<input type="text" value="12:00" name="name" class="form__field" required="">
+							<label>
+								Дата начала плавания
+							</label>
+						</div>
+					</div>
+					<div class="form__right">
+						<div class="form__item">
+							<input type="text" value="Индивидуальный" name="name" class="form__field" required="">
+							<label>
+								Тип сопровождение
+							</label>
+						</div>
+						<div class="form__item">
+							<input type="text" value="ДЮК II" name="name" class="form__field" required="">
+							<label>
+								Наименование судна
+							</label>
+						</div>
+						<div class="form__item">
+							<input type="text" value="15" name="name" class="form__field" required="">
+							<label>
+								Скорость, узлы
+								(по чистой воде)
+							</label>
+						</div>
+						<div class="form__flex q">
+							<div class="form__item">
+								<input type="text" value="12" name="name" class="form__field" required="">
+								<label>
+									Желаемое время отправления
+								</label>
+							</div>
+							<div class="form__item">
+								<input type="text" value="15:00" name="name" class="form__field" required="">
+								<label>
+									Желаемое время прибытия
+								</label>
+							</div>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</section>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<script src="js/all.js"></script>
+</body>
+
+</html>
